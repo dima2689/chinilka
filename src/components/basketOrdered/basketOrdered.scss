@@ -1,0 +1,19 @@
+@import '../../style/colors.scss';
+.ordered {
+	margin-top: 25px;
+	width: 100%;
+	background: $purple;
+	border-radius: 15px;
+	padding: 30px;
+	h2 {
+		color: #fff;
+	}
+	.go-back {
+		margin-top: 15px;
+		font-weight: 300;
+		font-size: 32px;
+		line-height: 47px;
+		color: #ffffff;
+		text-decoration: underline;
+	}
+}

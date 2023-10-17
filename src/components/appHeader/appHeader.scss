@@ -1,0 +1,172 @@
+@import '../../style/colors.scss';
+@import '../../style/JuraFont.scss';
+
+.appHeader {
+	align-items: center;
+	margin-top: 25px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	.header-item {
+		display: flex;
+		align-items: center;
+		.info {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 21px;
+			color: #0b0725;
+			margin-left: 10px;
+			width: 12rem;
+		}
+		img {
+			width: 25px;
+			height: 25px;
+			@media screen and (max-width: 720px) {
+				width: 33px;
+				height: 33px;
+			}
+		}
+	}
+	@media screen and (max-width: 1170px) {
+		.header-item {
+			.info {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 17px;
+				width: 8rem;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	&_txt {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 47px;
+		color: #0b0725;
+	}
+}
+
+.phone_info {
+	span {
+		width: 170px;
+		@media screen and (max-width: 1170px) {
+			width: auto;
+		}
+	}
+	display: block;
+	.phone_number {
+		margin-bottom: 5px;
+		display: block;
+	}
+	.phone_call {
+		text-align: center;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		text-decoration-line: underline;
+		display: block;
+		color: $purple !important;
+		cursor: pointer;
+		@media screen and (max-width: 1170px) {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+		}
+		@media screen and (max-width: 720px) {
+			display: none;
+		}
+	}
+}
+.basket {
+	cursor: pointer;
+	background: #ffffff;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 11px;
+	width: 58px;
+	height: 58px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+	.basket-info {
+		svg {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+.basket:hover {
+	background: $purple;
+	svg {
+		path {
+			stroke: #fff;
+		}
+	}
+}
+.basket-counter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	color: #fff;
+	// border: 1px solid $purple;
+	background: $purple;
+	font-size: 16px;
+	margin-top: -25px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1170px) {
+	.logo_txt {
+		display: none;
+	}
+	.info {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		@media screen and (max-width: 720px) {
+			display: none;
+		}
+	}
+}
+
+.info_for_phone {
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #aaaaaa;
+	border-radius: 15px;
+	padding: 15px;
+	span {
+		width: 80%;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	.mobileInfo-items-phone {
+		span {
+			display: block;
+			width: 100%;
+		}
+		display: block;
+	}
+	.mobile-type {
+		margin-top: 10px;
+		color: $purple;
+		text-decoration-line: underline;
+	}
+}

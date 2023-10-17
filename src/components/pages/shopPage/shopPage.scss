@@ -1,0 +1,28 @@
+@import '../../../style/JuraFont.scss';
+.item_page {
+	margin-top: 60px;
+	display: flex;
+	grid-gap: 20px;
+	&_shop-wrp {
+		h2 {
+			font-family: 'Jura';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 38px;
+			margin-bottom: 20px;
+		}
+	}
+	.items_grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+		justify-content: center;
+		@media screen and (max-width: 720px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	@media screen and (max-width: 720px) {
+		display: block;
+	}
+}

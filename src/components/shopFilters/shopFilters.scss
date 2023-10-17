@@ -1,0 +1,223 @@
+@import '../../style/colors.scss';
+
+.filters {
+	margin-top: 20px;
+	display: grid;
+	grid-gap: 20px;
+	.filterItem {
+		border: 1px solid #aaaaaa;
+		background-color: #f3f3f3;
+		border-radius: 15px;
+		width: 278px;
+		padding: 15px;
+		@media screen and (max-width: 1170px) {
+			width: 165px;
+			border-radius: 8px;
+			padding: 10px;
+		}
+		@media screen and (max-width: 720px) {
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 1170px) {
+		grid-gap: 10px;
+	}
+	.filters_select {
+		&-select {
+			height: 44px;
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 21px;
+			color: #000000;
+			padding: 0 20px;
+			@media screen and (max-width: 1170px) {
+				height: 33px;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 12px;
+				line-height: 14px;
+			}
+			@media screen and (max-width: 720px) {
+				font-style: normal;
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 23px;
+				height: 45px;
+			}
+		}
+	}
+	.filters_price_form {
+		&-inputs {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			input {
+				width: 114px;
+				height: 28px;
+				background: #ffffff;
+				border-radius: 5px;
+				padding-left: 5px;
+				border: 0px;
+			}
+		}
+		&-btn {
+			margin-top: 15px;
+			width: 100%;
+			height: 40px;
+			background: $purple;
+			border-radius: 5px;
+			border: 0px;
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 21px;
+			color: #ffffff;
+			transition: all 0.3s ease-in-out;
+		}
+		&-btn:hover {
+			background: none;
+			border: 1px solid $purple;
+			color: $purple;
+		}
+		@media screen and (max-width: 1170px) {
+			&-inputs {
+				margin-top: 10px;
+				input {
+					width: 62px;
+					height: 28px;
+				}
+			}
+			&-btn {
+				height: 28px;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+		@media screen and (max-width: 720px) {
+			&-inputs {
+				grid-gap: 10px;
+				input {
+					width: 100%;
+				}
+			}
+			&-btn {
+				height: 28px;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				width: 100%;
+			}
+		}
+	}
+	@media screen and (max-width: 720px) {
+		margin-bottom: 20px;
+	}
+}
+.filter_title {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	margin-bottom: 10px;
+	@media screen and (max-width: 1170px) {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	@media screen and (max-width: 720px) {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+	}
+}
+.filters_memmory-grid {
+	margin-top: 10px;
+	grid-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	@media screen and (max-width: 1170px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width: 720px) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+.filter_memory_item {
+	cursor: pointer;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 70px;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 19px;
+	color: #aaaaaa;
+	@media screen and (max-width: 1170px) {
+		width: 68px;
+	}
+	@media screen and (max-width: 720px) {
+		width: 100%;
+	}
+}
+.filters_colors-grid {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(7, 1fr);
+	margin-top: 10px;
+	@media screen and (max-width: 1170px) {
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 7px;
+	}
+	@media screen and (max-width: 720px) {
+		display: flex;
+	}
+}
+.filter_color_item {
+	cursor: pointer;
+	border-radius: 5px;
+	width: 28px;
+	height: 28px;
+	@media screen and (max-width: 1170px) {
+		width: 22px;
+		height: 22px;
+	}
+	@media screen and (max-width: 720px) {
+		width: 34px;
+		height: 34px;
+	}
+}
+.filters_reset-filters_btn {
+	cursor: pointer;
+	width: 100%;
+	border: 1px solid $purple;
+	border-radius: 5px;
+	height: 40px;
+	font-family: 'Roboto', sans-serif;
+	color: $purple;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media screen and (max-width: 1170px) {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+	}
+}

@@ -1,0 +1,306 @@
+@import '../../style/JuraFont.scss';
+@import '../../style/colors.scss';
+
+.item_iphone_screen-wrp {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	background: #ffffff;
+	border-radius: 25px;
+	padding: 20px;
+	margin-top: 20px;
+	@media screen and (max-width: 720px) {
+		// display: grid;
+		// grid-gap: 10px;
+		// justify-content: center;
+		// justify-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.item_iphone_screen-img {
+		img {
+			object-fit: cover;
+		}
+	}
+	.screen_info {
+		.screen_info-name {
+			font-family: 'Jura';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 43px;
+			color: #000000;
+			margin-bottom: 20px;
+			max-width: 640px;
+			@media screen and (max-width: 1170px) {
+				font-style: normal;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 28px;
+				width: 329px;
+			}
+			@media screen and (max-width: 720px) {
+				width: 100%;
+			}
+		}
+		&-stock-info {
+			display: flex;
+			align-items: center;
+			grid-gap: 30px;
+			&_price {
+				font-family: 'Roboto', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 38px;
+				color: #000000;
+			}
+			span {
+				font-family: 'Roboto', sans-serif;
+				font-size: 20px;
+			}
+			@media screen and (max-width: 1170px) {
+				grid-gap: 15px;
+				&_price {
+					font-style: normal;
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 28px;
+				}
+				span {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+				}
+			}
+		}
+		.screen_info-specifications {
+			margin: 30px 0;
+			width: 280px;
+			padding: 15px 0px;
+			background: #f3f3f3;
+			border-radius: 25px;
+			.specifications_item {
+				font-family: 'Roboto', sans-serif;
+				width: 90%;
+				margin: 0 auto;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.specifications-title {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 18px;
+					line-height: 21px;
+					color: #364637;
+				}
+				.specifications-specific {
+					font-size: 18px;
+					line-height: 21px;
+					color: #aaaaaa;
+				}
+			}
+			.specifications-line {
+				border: 1px solid #aaaaaa;
+				width: 100%;
+				margin: 15px 0;
+			}
+			@media screen and (max-width: 1170px) {
+				margin: 10px 0;
+				.specifications-line {
+					margin: 5px 0;
+				}
+			}
+			@media screen and (max-width: 720px) {
+				width: 100%;
+			}
+		}
+		.screen_info_shop-selectors {
+			display: flex;
+			grid-gap: 20px;
+			align-items: center;
+			.shop-selectors-counter {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 11px 8px;
+				border: 1px solid $purple;
+				border-radius: 15px;
+				width: 83px;
+				img {
+					cursor: pointer;
+				}
+			}
+			.shop-selectors-oneClick {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 177px;
+				height: 43px;
+				font-family: 'Roboto', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 16px;
+				color: $purple;
+				border: 1px solid $purple;
+				border-radius: 15px;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+			}
+			.shop-selectors-oneClick:hover {
+				background-color: $purple;
+				color: #fff;
+			}
+			.shop-selectors-add-to-cart {
+				border: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				grid-gap: 5px;
+				width: 257px;
+				height: 43px;
+				background: $purple;
+				color: #ffffff;
+				border-radius: 15px;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+			}
+			.shop-selectors-add-to-cart:hover {
+				color: $purple;
+				background: #ffffff;
+				border: 1px solid $purple;
+				svg {
+					path {
+						stroke: $purple;
+					}
+				}
+			}
+			.shop-selectors-add-to-cart:disabled {
+				cursor: default;
+				color: $purple;
+				background: #ffffff;
+				border: 1px solid $purple;
+				svg {
+					path {
+						stroke: $purple;
+					}
+				}
+			}
+			@media screen and (max-width: 1170px) {
+				flex-wrap: wrap;
+				grid-gap: 10px;
+				width: 280px;
+				.shop-selectors {
+					&-counter,
+					&-oneClick,
+					&-add-to-cart {
+						height: 35px !important;
+						border-radius: 10px;
+					}
+					&-add-to-cart {
+						width: 100%;
+					}
+				}
+			}
+			@media screen and (max-width: 720px) {
+				width: 100%;
+				flex-wrap: wrap;
+				.shop-selectors {
+					&-counter,
+					&-oneClick,
+					&-add-to-cart {
+						width: 100%;
+						height: 50px !important;
+					}
+					&-counter {
+						span {
+							font-size: 24px;
+						}
+						img {
+							width: 20px;
+						}
+					}
+					&-add-to-cart {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.screen_info-credit {
+			margin-top: 30px;
+			h5 {
+				font-family: 'Roboto', sans-serif;
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 23px;
+				color: #292929;
+			}
+			.credit-info {
+				margin-top: 20px;
+				width: 555px;
+				height: auto;
+				padding: 20px;
+				background: #f3f3f3;
+				border-radius: 25px;
+				p {
+					font-family: 'Roboto', sans-serif;
+					font-weight: 400;
+					font-size: 20px;
+					line-height: 23px;
+					color: #292929;
+				}
+			}
+			@media screen and (max-width: 1170px) {
+				.credit-info {
+					margin-top: 10px;
+					width: 329px;
+					border-radius: 10px;
+					p {
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 16px;
+					}
+				}
+				h5 {
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 19px;
+				}
+			}
+			@media screen and (max-width: 720px) {
+				.credit-info {
+					width: 100%;
+				}
+			}
+		}
+		@media screen and (max-width: 720px) {
+			width: 90%;
+		}
+	}
+}
+
+.you-add-to-cart {
+	margin: 20px 0;
+	border-radius: 15px;
+	background: $purple;
+	width: 100%;
+	height: 80px;
+	align-items: center;
+	justify-content: center;
+	span {
+		font-family: 'Roboto', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 23px;
+		color: #ffffff;
+		@media screen and (max-width: 720px) {
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+}

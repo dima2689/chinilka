@@ -1,0 +1,45 @@
+@import '../../../style/colors.scss';
+
+.basket-section {
+	margin-top: 60px;
+	.basket_title {
+		margin-top: 30px;
+	}
+	.basket_items-wrp {
+		min-height: 170px;
+		margin-top: 20px;
+	}
+	.basket-empty {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 50px;
+	}
+	.basket_amount {
+		grid-gap: 20px;
+		align-items: end;
+		padding: 20px 15px;
+		background: #ffffff;
+		border-radius: 15px;
+		justify-content: end;
+		margin-left: auto;
+		margin-right: 0;
+		span:first-child {
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 38px;
+			color: #000000;
+			margin-right: 10px;
+		}
+		span {
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 28px;
+			color: $purple;
+		}
+	}
+}

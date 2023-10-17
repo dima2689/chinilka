@@ -1,0 +1,102 @@
+@import '../../style/colors.scss';
+
+.modal-overlay {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background: rgba(243, 243, 243, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&_content {
+		width: 575px;
+		background: #ffffff;
+		border: 1px solid $purple;
+		border-radius: 25px;
+		padding: 30px;
+		h2 {
+			font-family: 'Jura';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 43px;
+			text-align: center;
+			color: #000000;
+			margin-bottom: 20px;
+		}
+		p {
+			font-family: 'Roboto', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 23px;
+			text-align: center;
+			color: #292929;
+			margin-bottom: 30px;
+		}
+		input {
+			background: #f6f6f6;
+			border: 1px solid $purple;
+			border-radius: 15px;
+			width: 308px;
+			height: 40px;
+			margin: 0 auto;
+			display: block;
+			padding-left: 20px;
+		}
+		.overlay_btns {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			grid-gap: 20px;
+			.submit-order {
+				border: none;
+				background: $purple;
+				border-radius: 15px;
+				width: 147px;
+				height: 37px;
+				color: #fff;
+				transition: all 0.3s ease-in-out;
+			}
+			.cancel {
+				border: 1px solid $purple;
+				border-radius: 15px;
+				width: 147px;
+				height: 37px;
+				background: none;
+				color: $purple;
+				transition: all 0.3s ease-in-out;
+			}
+			.submit-order:hover {
+				border: 1px solid $purple;
+				background: none;
+				color: $purple;
+			}
+			.cancel:hover {
+				border: none;
+				background: $purple;
+				color: #fff;
+			}
+		}
+	}
+}
+.cancel-ord {
+	margin: 0 auto;
+	display: block;
+	border: 1px solid $purple;
+	border-radius: 15px;
+	width: 147px;
+	height: 37px;
+	background: none;
+	color: $purple;
+	transition: all 0.3s ease-in-out;
+}
+.cancel-ord:hover {
+	border: none;
+	background: $purple;
+	color: #fff;
+}
