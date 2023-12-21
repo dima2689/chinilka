@@ -14,8 +14,7 @@ const AppFooter: React.FC = () => {
 		<footer>
 			<AppModal active={active} setActive={setActive} />
 			<div className='container'>
-				<Link to={`/`} className='footer_logo'>
-					<img src={logo_white} alt='logo' />
+				
 					<h3>Чинилка</h3>
 				</Link>
 				<div className='footer_contacts'>
