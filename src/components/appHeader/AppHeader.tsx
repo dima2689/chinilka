@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import AppModal from '../appModal/AppModal';
 import { useAppSelector } from '../../hooks/tsHooks';
 
-import logo from '../../assets/logo/logo.png';
+
 import map from '../../assets/icons/bx_map.svg';
 import phone from '../../assets/icons/ci_phone-outline.svg';
 import time from '../../assets/icons/access-time.svg';
