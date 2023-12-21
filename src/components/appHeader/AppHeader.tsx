@@ -71,10 +71,9 @@ const AppHeader: React.FC = () => {
 			<AppModal active={active} setActive={setActive} />
 			<div className='container'>
 				<div className='appHeader'>
-					<Link to={`/`} className='logo'>
-						<img src={logo} alt='logo' />
+					
 						<span className='logo_txt'>Чинилка</span>
-					</Link>
+					
 					<div className='header-item' onClick={() => setinfoType('address')}>
 						<img src={map} alt='map' />
 						<span className='head_info info'>{infoState.address}</span>
