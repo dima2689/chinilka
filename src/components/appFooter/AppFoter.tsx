@@ -16,6 +16,7 @@ const AppFooter: React.FC = () => {
 			<div className='container'>
 				
 					<h3>Чинилка</h3>
+			</div>
 				</Link>
 				<div className='footer_contacts'>
 					<div className='footer-item'>
