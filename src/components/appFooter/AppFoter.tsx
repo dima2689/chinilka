@@ -1,5 +1,5 @@
 import './appFooter.scss';
-import logo_white from '../../assets/logo/logo_white.png';
+
 import map from '../../assets/icons/bx_map-white.svg';
 import phone from '../../assets/icons/ci_phone-outline_white.svg';
 import time from '../../assets/icons/access-time_hitw.svg';
